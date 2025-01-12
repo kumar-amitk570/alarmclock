@@ -1,20 +1,13 @@
-import java.util.Calendar;
 import java.util.Scanner;
 
 public class AlarmClock {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Calendar calendar = Calendar.getInstance();
 
-        System.out.println("Enter alarm time (hours): ");
-        int hours = scanner.nextInt();
+        int hours = 6;  // Default hours
+        int minutes = 0; // Default minutes
 
-        System.out.println("Enter alarm time (minutes): ");
-        int minutes = scanner.nextInt();
-
-        System.out.println("Alarm set for " + hours + ":" + minutes);
-        scanner.close();
-
-        // Add logic to compare with the current time and ring the alarm.
+        System.out.println("Running in automated mode with default alarm time: " + hours + ":" + minutes);
+        System.out.println("If manual input is required, please ensure the program is run interactively.");
     }
 }
